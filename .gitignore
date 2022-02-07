@@ -1,3 +1,4 @@
 .DS_Store
 courseFiles/
 **/node_modules/
+**/stepped-solutions/
