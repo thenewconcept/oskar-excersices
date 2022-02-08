@@ -13,7 +13,7 @@ class App extends React.Component{
         order: {}
     };
     static propTypes = {
-        match: PropTypes.object
+        match: PropTypes.object.isRequired
     }
     componentDidMount(){
         const localStorageRef = localStorage.getItem(this.props.match.params.storeId);
@@ -82,6 +82,7 @@ class App extends React.Component{
                     deleteFish={this.deleteFish}
                     loadSampleFishes={this.loadSampleFishes}
                     fishes={this.state.fishes}
+                    storeId={this.props.match.params.storeId}
                 />
             </div>
         );

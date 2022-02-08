@@ -8,29 +8,29 @@ class Order extends React.Component{
         fishes: PropTypes.shape({
             fish: PropTypes.shape({
                 detais: PropTypes.shape({
-                    image: PropTypes.string, 
-                    name: PropTypes.string, 
-                    desc: PropTypes.string, 
-                    status: PropTypes.string, 
-                    price: PropTypes.number,
-                }),
-                addToOrder: PropTypes.func,
+                    image: PropTypes.string.isRequired, 
+                    name: PropTypes.string.isRequired, 
+                    desc: PropTypes.string.isRequired, 
+                    status: PropTypes.string.isRequired, 
+                    price: PropTypes.number.isRequired,
+                }).isRequired,
+                addToOrder: PropTypes.func.isRequired,
             })
-        }),
+        }).isRequired,
         order: PropTypes.shape({
             fish: PropTypes.shape({
                 detais: PropTypes.shape({
-                    image: PropTypes.string, 
-                    name: PropTypes.string, 
-                    desc: PropTypes.string, 
-                    status: PropTypes.string, 
-                    price: PropTypes.number,
-                }),
-                addToOrder: PropTypes.func,
+                    image: PropTypes.string.isRequired, 
+                    name: PropTypes.string.isRequired, 
+                    desc: PropTypes.string.isRequired, 
+                    status: PropTypes.string.isRequired, 
+                    price: PropTypes.number.isRequired,
+                }).isRequired,
+                addToOrder: PropTypes.func.isRequired,
             }),
             count: PropTypes.number
-        }),
-        removeFromOrder: PropTypes.func
+        }).isRequired,
+        removeFromOrder: PropTypes.func.isRequired
     }
     renderOrder = (key) => {
         const fish = this.props.fishes[key];
