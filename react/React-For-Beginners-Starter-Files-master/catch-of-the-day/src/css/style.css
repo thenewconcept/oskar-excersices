@@ -22,7 +22,6 @@
   transform: translateY(100%);
 }
 .count-enter.count-enter-active {
-  background: #ff0;
   transform: translateY(0);
 }
 .count-exit {
@@ -33,8 +32,7 @@
   bottom: 0;
 }
 .count-exit.count-exit-active {
-  background: #008000;
-  transform: translateY(-100%) scale(3);
+  transform: translateY(-100%);
 }
 @font-face {
   font-family: "haymakerregular";
